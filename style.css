@@ -158,4 +158,85 @@ p{
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
+    font-size: 16px;
+    color: bisque;
 }
+
+a {
+      color: white;
+      text-decoration: none;
+  }
+  
+  footer img {
+      width: 40px;
+      height: 40px;
+  }
+  
+  footer {
+      display: flex;
+      justify-content: left;
+  }
+  
+  footer a {
+      margin: 20px;
+      text-align: center;
+  }
+  
+  footer p {
+    margin-top: 2px;
+    margin-top: 2px;
+    font-size: 14px;
+    text-transform: uppercase;
+
+    background: linear-gradient(45deg, #638ED1, #ff0000, #009688,#44E3D3);
+    background-size: 400% 100%;
+    animation: degrade 10s linear infinite alternate;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    outline: none;
+}
+
+@keyframes degrade {
+    0%{
+        background-position-x: 0%;
+    }
+
+    100%{
+        background-position: 400%;
+    }
+}
+}
+    
+  }
+  
+  p{
+    font-size: 16px;
+    color: green;
+  }
+  
+  .texto{
+      font-size: 30px;
+      text-transform: uppercase;
+  
+      background: linear-gradient(45deg, #638ED1, #ff0000, #009688,#44E3D3);
+      background-size: 400% 100%;
+      animation: degrade 10s linear infinite alternate;
+  
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  
+      outline: none;
+  }
+  
+  @keyframes degrade {
+      0%{
+          background-position-x: 0%;
+      }
+  
+      100%{
+          background-position: 400%;
+      }
+  }
+  
