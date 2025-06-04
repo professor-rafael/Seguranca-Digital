@@ -154,3 +154,8 @@ label{
     }
 }
 
+p{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
