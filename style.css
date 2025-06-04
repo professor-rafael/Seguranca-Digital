@@ -162,32 +162,65 @@ p{
     color: bisque;
 }
 
-a {
-      color: white;
-      text-decoration: none;
-  }
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+        margin-top: 40px;
+}
+
+.btn {
   
-  footer img {
-      width: 40px;
-      height: 40px;
-  }
-  
-  footer {
-      display: flex;
-      text-align: center;
-  }
-  
-  footer a {
-      margin: 20px;
-      text-align: center;
-  }
-  
+
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #005bb5;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.footer-links a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+     transition: transform 0.3s;
+}
+
+.footer-links a:hover {
+    transform: translateY(-5px);
+}
+
+.footer-links img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+}
+
+.footer-links p {
+    margin: 0;
+    font-size: 14px;
+}
   footer p {
     margin-top: 2px;
     margin-top: 2px;
     font-size: 14px;
     text-transform: uppercase;
-
     background: linear-gradient(45deg, #638ED1, #ff0000, #009688,#44E3D3);
     background-size: 400% 100%;
     animation: degrade 10s linear infinite alternate;
