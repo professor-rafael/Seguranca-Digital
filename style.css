@@ -160,7 +160,7 @@ p{
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     font-size: 16px;
-    color: bisque;
+    color: #00162E;
 }
 
 footer {
@@ -169,7 +169,7 @@ footer {
     align-items: center;
     gap: 20px;
     padding: 20px;
-        margin-top: 40px;
+    margin-top: 40px;
 }
 
 .btn {
