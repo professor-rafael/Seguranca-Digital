@@ -23,7 +23,8 @@ body{
 
 .titulo-principal{
     font-family: var(--roboto-mono);
-    font-size: 32px;
+    font-size: 36px;
+    color:yellow;
 }
 
 .titulo-secundario{
