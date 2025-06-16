@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senhas Seguras | RasinformaticA</title>
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 class="logo">Ras<span>informaticA</span></h1>
+            <h2 class="title">Gerador de Senhas</h2>
+        </header>
+
+        <main class="card">
+            <div class="password-display">
+                <input type="text" id="campo-senha" readonly>
+                <button id="copy-btn" title="Copiar senha">
+                    <i class="far fa-copy"></i>
+                </button>
+                <button id="refresh-btn" title="Gerar nova senha">
+                    <i class="fas fa-sync-alt"></i>
+                </button>
+            </div>
+
+            <div class="password-strength">
+                <div class="strength-meter">
+                    <div class="strength-bar"></div>
+                </div>
+                <div class="strength-labels">
+                    <span>Fraca</span>
+                    <span>Média</span>
+                    <span>Forte</span>
+                    <span>Muito Forte</span>
+                </div>
+                <p class="entropia"></p>
+            </div>
+
+            <div class="password-options">
+                <div class="option">
+                    <label for="length">Tamanho: <span id="length-value">12</span></label>
+                    <input type="range" id="length" min="4" max="32" value="12">
+                </div>
+
+                <div class="option-group">
+                    <div class="option">
+                        <input type="checkbox" id="uppercase" checked>
+                        <label for="uppercase">Letras Maiúsculas (A-Z)</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="lowercase">
+                        <label for="lowercase">Letras Minúsculas (a-z)</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="numbers">
+                        <label for="numbers">Números (0-9)</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="symbols">
+                        <label for="symbols">Símbolos (!@#$%^&*)</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="exclude-similar">
+                        <label for="exclude-similar">Excluir caracteres similares (1,l,I,0,O,etc)</label>
+                    </div>
+                </div>
+
+                <button id="generate-btn" class="btn-primary">
+                    <i class="fas fa-key"></i> Gerar Nova Senha
+                </button>
+            </div>
+        </main>
+
+        <div class="features">
+            <div class="feature-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Segurança</h3>
+                <p>Senhas geradas localmente, sem armazenamento ou transmissão de dados.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-customize"></i>
+                <h3>Personalização</h3>
+                <p>Controle total sobre o tipo e complexidade da senha gerada.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-tachometer-alt"></i>
+                <h3>Força Instantânea</h3>
+                <p>Visualização em tempo real da força da sua senha.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Gerador de Senhas Seguras</h3>
+                <p>Ferramenta desenvolvida por RasinformaticA para criar senhas fortes e únicas.</p>
+            </div>
+            
+            <div class="footer-links">
+                <a href="https://github.com/professor-rafael" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://www.youtube.com/channel/UCBRq6fO_-P6yPOVbC0yZVmQ" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-youtube"></i>
+                    <span>YouTube</span>
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=5543996561825" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </a>
+                <a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-robot"></i>
+                    <span>Deepseek</span>
+                </a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 RasinformaticA. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="javascript.js"></script>
+</body>
+
+</html>
